@@ -107,7 +107,7 @@ class ImageCardComboComponent {
     }
 }
 ImageCardComboComponent.ɵfac = function ImageCardComboComponent_Factory(t) { return new (t || ImageCardComboComponent)(); };
-ImageCardComboComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ImageCardComboComponent, selectors: [["app-image-card-combo"]], decls: 10, vars: 1, consts: [[1, "row", "align-items-center", "my-5"], [1, "col-lg-7"], ["src", "assets/7_downscaled.jpg", "alt", "", 1, "img-fluid", "rounded", "mb-4", "mb-lg-0"], [1, "col-lg-5", "highlighted-background"], [1, "font-weight-light"], [1, "btn", "btn-primary", 3, "routerLink"]], template: function ImageCardComboComponent_Template(rf, ctx) { if (rf & 1) {
+ImageCardComboComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ImageCardComboComponent, selectors: [["app-image-card-combo"]], decls: 10, vars: 1, consts: [[1, "row", "align-items-center", "my-5"], [1, "col-lg-7"], ["src", "/assets/7_downscaled.jpg", "alt", "", 1, "img-fluid", "rounded", "mb-4", "mb-lg-0"], [1, "col-lg-5", "highlighted-background"], [1, "font-weight-light"], [1, "btn", "btn-primary", 3, "routerLink"]], template: function ImageCardComboComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 2);
