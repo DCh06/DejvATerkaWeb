@@ -40,11 +40,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "CompanyServicesComponent": () => (/* binding */ CompanyServicesComponent)
 /* harmony export */ });
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/animations */ 7238);
 /* harmony import */ var src_app_types_truck_property_name_enum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/types/truck-property-name.enum */ 3208);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7716);
 /* harmony import */ var _company_services_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./company-services.service */ 6892);
 /* harmony import */ var _common_components_common_card_common_card_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common-components/common-card/common-card.component */ 217);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 8583);
+
 
 
 
@@ -101,6 +103,7 @@ function CompanyServicesComponent_div_6_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const truck_r3 = ctx.$implicit;
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("@fadeAnim", undefined);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("title", "Specifikace vozidla s lo\u017Enou plochou " + truck_r3.name);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
@@ -131,7 +134,7 @@ class CompanyServicesComponent {
     }
 }
 CompanyServicesComponent.ɵfac = function CompanyServicesComponent_Factory(t) { return new (t || CompanyServicesComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_company_services_service__WEBPACK_IMPORTED_MODULE_1__.CompanyServicesService)); };
-CompanyServicesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: CompanyServicesComponent, selectors: [["app-company-services"]], decls: 7, vars: 3, consts: [[1, "row"], [1, "col-md-12a", "mb-5"], [3, "title"], [4, "ngFor", "ngForOf"], ["class", "col-md-6 mb-5", 4, "ngFor", "ngForOf"], [1, "col-md-6", "mb-5"], [1, "card-text"]], template: function CompanyServicesComponent_Template(rf, ctx) { if (rf & 1) {
+CompanyServicesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: CompanyServicesComponent, selectors: [["app-company-services"]], decls: 7, vars: 4, consts: [[1, "row"], [1, "col-md-12a", "mb-5"], [3, "title"], [4, "ngFor", "ngForOf"], ["class", "col-md-6 mb-5", 4, "ngFor", "ngForOf"], [1, "col-md-6", "mb-5"], [1, "card-text"]], template: function CompanyServicesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](2, "app-common-card", 2);
@@ -142,16 +145,50 @@ CompanyServicesComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_M
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](5, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, CompanyServicesComponent_div_6_Template, 23, 9, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, CompanyServicesComponent_div_6_Template, 23, 10, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("@topAnim", undefined);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("title", "P\u0159evoz n\u00E1kladu za pomoc\u00ED hydraulick\u00E9 ruky");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.posibilities);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.trucks);
-    } }, directives: [_common_components_common_card_common_card_component__WEBPACK_IMPORTED_MODULE_2__.CommonCardComponent, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb21wYW55LXNlcnZpY2VzLmNvbXBvbmVudC5zY3NzIn0= */"] });
+    } }, directives: [_common_components_common_card_common_card_component__WEBPACK_IMPORTED_MODULE_2__.CommonCardComponent, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb21wYW55LXNlcnZpY2VzLmNvbXBvbmVudC5zY3NzIn0= */"], data: { animation: [
+            (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.trigger)('topAnim', [
+                //ENTRY ANIMATION
+                (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.transition)('void => *', [
+                    //Initial states
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.style)({
+                        opacity: 0,
+                        'transform': 'translateY(-50px)',
+                    }),
+                    //we first want to animate the spacing which includes height and margin
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.animate)('400ms ease-out', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.style)({
+                        opacity: '*',
+                        'transform': 'translateY(0px)',
+                    })),
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.animate)(400)
+                ])
+            ]),
+            (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.trigger)('fadeAnim', [
+                //ENTRY ANIMATION
+                (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.transition)('void => *', [
+                    //Initial states
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.style)({
+                        opacity: 0,
+                        'transform': 'scale(0.85)',
+                    }),
+                    //we first want to animate the spacing which includes height and margin
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.animate)('400ms ease-out', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.style)({
+                        opacity: '*',
+                        'transform': 'scale(1 )',
+                    })),
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_5__.animate)(400)
+                ])
+            ])
+        ] } });
 
 
 /***/ }),

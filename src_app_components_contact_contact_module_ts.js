@@ -40,9 +40,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ContactComponent": () => (/* binding */ ContactComponent)
 /* harmony export */ });
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/animations */ 7238);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7716);
 /* harmony import */ var _contact_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contact.service */ 2021);
 /* harmony import */ var _common_components_common_card_common_card_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common-components/common-card/common-card.component */ 217);
+
 
 
 
@@ -55,7 +57,7 @@ class ContactComponent {
     }
 }
 ContactComponent.ɵfac = function ContactComponent_Factory(t) { return new (t || ContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_contact_service__WEBPACK_IMPORTED_MODULE_0__.ContactService)); };
-ContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: ContactComponent, selectors: [["app-contact"]], decls: 30, vars: 7, consts: [[1, "row"], [1, "col-md-6", "mb-5"], [3, "title"], [1, "card-text"], [3, "href"]], template: function ContactComponent_Template(rf, ctx) { if (rf & 1) {
+ContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: ContactComponent, selectors: [["app-contact"]], decls: 30, vars: 9, consts: [[1, "row"], [1, "col-md-6", "mb-5"], [3, "title"], [1, "card-text"], [3, "href"]], template: function ContactComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "app-common-card", 2);
@@ -107,7 +109,9 @@ ContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2_
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("@leftAnim", undefined);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("title", "Kontakt");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx.contactInfo.phone);
@@ -119,9 +123,44 @@ ContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2_
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx.contactInfo.IC.num);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx.contactInfo.residency);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("@rightAnim", undefined);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("title", "Pracovn\u00ED doba");
-    } }, directives: [_common_components_common_card_common_card_component__WEBPACK_IMPORTED_MODULE_1__.CommonCardComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb250YWN0LmNvbXBvbmVudC5zY3NzIn0= */"] });
+    } }, directives: [_common_components_common_card_common_card_component__WEBPACK_IMPORTED_MODULE_1__.CommonCardComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb250YWN0LmNvbXBvbmVudC5zY3NzIn0= */"], data: { animation: [
+            (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.trigger)('leftAnim', [
+                //ENTRY ANIMATION
+                (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.transition)('void => *', [
+                    //Initial states
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.style)({
+                        opacity: 0,
+                        'transform': 'translateX(-50px)',
+                    }),
+                    //we first want to animate the spacing which includes height and margin
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.animate)('400ms ease-out', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.style)({
+                        opacity: '*',
+                        'transform': 'translateX(0px)',
+                    })),
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.animate)(400)
+                ])
+            ]),
+            (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.trigger)('rightAnim', [
+                //ENTRY ANIMATION
+                (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.transition)('void => *', [
+                    //Initial states
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.style)({
+                        opacity: 0,
+                        'transform': 'translateX(50px)',
+                    }),
+                    //we first want to animate the spacing which includes height and margin
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.animate)('400ms ease-out', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.style)({
+                        opacity: '*',
+                        'transform': 'translateX(0px)',
+                    })),
+                    (0,_angular_animations__WEBPACK_IMPORTED_MODULE_3__.animate)(400)
+                ])
+            ])
+        ] } });
 
 
 /***/ }),

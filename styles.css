@@ -10118,6 +10118,7 @@ body {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.8)) 80%, url('/DejvATerkaWeb/assets/website5.jpg') no-repeat center center fixed;
   background-size: cover;
   -o-background-size: cover;
+  overflow-x: hidden;
 }
 .btn:focus, .btn:active, button:focus, button:active {
   outline: none !important;
@@ -10136,6 +10137,9 @@ td {
 }
 img {
   image-orientation: from-image;
+}
+.container {
+  overflow-x: hidden;
 }
 @charset "UTF-8";
 /*!
